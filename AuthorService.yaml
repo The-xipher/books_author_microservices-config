@@ -50,8 +50,7 @@ management:
 
   health:
     mongo:
-     ping:
-       enabled: true?
+       enabled: false?
 
 
 
