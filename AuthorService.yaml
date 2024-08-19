@@ -50,7 +50,7 @@ management:
 
   health:
     mongo:
-       enabled: false?
+       enabled: true
 
 
 
