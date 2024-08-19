@@ -18,6 +18,7 @@ spring:
               - Method=GET
             filters:
               - RewritePath=/author/health, /health
+              - SetPath=/author
           - id: book-service
             uri: lb://BOOKSERVICE
             predicates:
