@@ -20,7 +20,7 @@ spring:
             # filters:
             #   - RewritePath=/author/health, /health
           - id: book-service
-            uri: lb://BOOK-SERVICE
+            uri: lb://http://5cd3441d13.ustr.com:8200/
             predicates:
               - Path=/book/**
               - Method=GET
