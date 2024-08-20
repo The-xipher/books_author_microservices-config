@@ -13,14 +13,14 @@ spring:
       mvc:
         routes:
           - id: author-service
-            uri: lb:/AUTHOR-SERVICE
+            uri: lb://AUTHOR-SERVICE
             predicates:
               - Path=/author/**
               - Method=GET
             # filters:
             #   - RewritePath=/author/health, /health
           - id: book-service
-            uri: lb:/BOOK-SERVICE
+            uri: lb://BOOK-SERVICE
             predicates:
               - Path=/book/**
               - Method=GET
